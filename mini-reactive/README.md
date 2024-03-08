@@ -1,0 +1,1 @@
+The smallest example of a responsive web frontend model.

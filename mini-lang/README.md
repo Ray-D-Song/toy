@@ -1,0 +1,1 @@
+mini-lang is a replica implementation of the [write-a-programming-language-in-450-lines](https://github.com/karminski/write-a-programming-language-in-450-lines?tab=readme-ov-file), for learning purposes only.
