@@ -1,0 +1,203 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`parse code return meta data > ./__snapshots__/parse.test.ts.snap 1`] = `
+Node {
+  "end": 47,
+  "loc": SourceLocation {
+    "end": Position {
+      "column": 1,
+      "index": 47,
+      "line": 5,
+    },
+    "filename": undefined,
+    "identifierName": undefined,
+    "start": Position {
+      "column": 14,
+      "index": 15,
+      "line": 2,
+    },
+  },
+  "members": [
+    Node {
+      "computed": false,
+      "end": 31,
+      "key": Node {
+        "end": 23,
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 6,
+            "index": 23,
+            "line": 3,
+          },
+          "filename": undefined,
+          "identifierName": "name",
+          "start": Position {
+            "column": 2,
+            "index": 19,
+            "line": 3,
+          },
+        },
+        "name": "name",
+        "start": 19,
+        "type": "Identifier",
+      },
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 14,
+          "index": 31,
+          "line": 3,
+        },
+        "filename": undefined,
+        "identifierName": undefined,
+        "start": Position {
+          "column": 2,
+          "index": 19,
+          "line": 3,
+        },
+      },
+      "start": 19,
+      "type": "TSPropertySignature",
+      "typeAnnotation": Node {
+        "end": 31,
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 14,
+            "index": 31,
+            "line": 3,
+          },
+          "filename": undefined,
+          "identifierName": undefined,
+          "start": Position {
+            "column": 6,
+            "index": 23,
+            "line": 3,
+          },
+        },
+        "start": 23,
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": Node {
+          "end": 31,
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 14,
+              "index": 31,
+              "line": 3,
+            },
+            "filename": undefined,
+            "identifierName": undefined,
+            "start": Position {
+              "column": 8,
+              "index": 25,
+              "line": 3,
+            },
+          },
+          "start": 25,
+          "type": "TSStringKeyword",
+        },
+      },
+    },
+    Node {
+      "computed": false,
+      "end": 45,
+      "key": Node {
+        "end": 37,
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 5,
+            "index": 37,
+            "line": 4,
+          },
+          "filename": undefined,
+          "identifierName": "age",
+          "start": Position {
+            "column": 2,
+            "index": 34,
+            "line": 4,
+          },
+        },
+        "name": "age",
+        "start": 34,
+        "type": "Identifier",
+      },
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 13,
+          "index": 45,
+          "line": 4,
+        },
+        "filename": undefined,
+        "identifierName": undefined,
+        "start": Position {
+          "column": 2,
+          "index": 34,
+          "line": 4,
+        },
+      },
+      "start": 34,
+      "type": "TSPropertySignature",
+      "typeAnnotation": Node {
+        "end": 45,
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 13,
+            "index": 45,
+            "line": 4,
+          },
+          "filename": undefined,
+          "identifierName": undefined,
+          "start": Position {
+            "column": 5,
+            "index": 37,
+            "line": 4,
+          },
+        },
+        "start": 37,
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": Node {
+          "end": 45,
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 13,
+              "index": 45,
+              "line": 4,
+            },
+            "filename": undefined,
+            "identifierName": undefined,
+            "start": Position {
+              "column": 7,
+              "index": 39,
+              "line": 4,
+            },
+          },
+          "start": 39,
+          "type": "TSNumberKeyword",
+        },
+      },
+    },
+  ],
+  "start": 15,
+  "type": "TSTypeLiteral",
+}
+`;
+
+exports[`parse code return meta data > ./__snapshots__/parse.test.ts.snap 2`] = `
+Node {
+  "end": 21,
+  "loc": SourceLocation {
+    "end": Position {
+      "column": 20,
+      "index": 21,
+      "line": 2,
+    },
+    "filename": undefined,
+    "identifierName": undefined,
+    "start": Position {
+      "column": 14,
+      "index": 15,
+      "line": 2,
+    },
+  },
+  "start": 15,
+  "type": "TSStringKeyword",
+}
+`;
