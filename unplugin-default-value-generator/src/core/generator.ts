@@ -27,12 +27,12 @@ export function inferDefaultValue(typeParamAST: TSType) {
 			return '0'
 		case 'TSBooleanKeyword':
 			return 'false'
-    case 'TSObjectKeyword':
-      return '{}'
-    case 'TSNullKeyword':
-      return 'null'
-    case 'TSTypeLiteral':
-      return handleLiteralType:
+		case 'TSObjectKeyword':
+			return '{}'
+		case 'TSNullKeyword':
+			return 'null'
+    // case 'TSTypeLiteral':
+    //   return handleLiteralType:
 	}
 }
 
@@ -46,8 +46,8 @@ export function parse(code: string) {
 	return typeParam
 }
 
-export default function createGenerator(options: Options) {
-	const macroNameReg = new RegExp(`${options.macroName}<([\s\S]*)+>\(\)`, 'g')
+export default function createGenerator(macroName: string) {
+	const macroNameReg = new RegExp(`${macroName}<([\s\S]*)+>\(\)`, 'g')
 
 	function generateDefaultValue(raw: string) {
 		const codeBlockList = extractCodeBlock(macroNameReg, raw)

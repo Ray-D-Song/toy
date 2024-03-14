@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue2 mini reactive</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div>{{message}}</div>
+    <div>a= {{a}}</div>
+    <div>a+1= {{aPlus}}</div>
+    <button @click="handleClick">+</button>
+  </div>
+  <script>
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello, world',
+        a: 1
+      },
+      methods: {
+        handleClick() {
+          this.a++
+        }
+      },
+      computed: {
+        aPlus: function() {
+          return this.a + 1
+        }
+      },
+      watch: {
+        a: function(newVal, oldVal) {
+          console.log('data a has changed, newVal: ', newVal, ', oldVal: ', oldVal)
+        }
+      }
+    })
+  </script>
+</body>
+</html>

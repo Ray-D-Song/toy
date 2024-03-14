@@ -1,6 +1,8 @@
-const a = createDefault<{
-  name: string,
+interface Human {
+  name: string
   age: number
-}>()
+}
 
-console.log(a)
+const human = createDefault<Human>()
+
+console.log(human)

@@ -79,11 +79,13 @@
 	"dependencies": {
 		"@babel/parser": "^7.24.0",
 		"magic-string": "^0.30.8",
+		"minimatch": "^9.0.3",
 		"unplugin": "^1.9.0"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.8.0",
 		"@babel/types": "^7.24.0",
+		"@types/node": "^20.11.25",
 		"eslint": "^8.57.0",
 		"tsup": "^8.0.2",
 		"typescript": "^5.4.2",

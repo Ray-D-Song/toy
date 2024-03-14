@@ -7,9 +7,7 @@ export interface Options {
 	macroName: string
 
 	/**
-	 * Path to the target, can be a folder or file path
-	 *
-	 * @default ['src']
+	 * Path to the target, can be a folder or file path, default src/*
 	 */
 	include: string[]
 
