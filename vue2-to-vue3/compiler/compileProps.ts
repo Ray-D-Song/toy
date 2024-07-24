@@ -6,11 +6,10 @@ interface PropMeta {
 	name: string
 	type: string
 	defaultValue: string
-	required: string
-	validator: string
+	required: boolean
 }
 
-export default function compileProps([ast]: Statement[], ms: MagicString) {
+export default function compileProps(ast: Statement, ms: MagicString) {
 	if (ast.type !== 'VariableDeclaration')
 		return MESSAGE.input_err
 	const init = ast.declarations[0].init
@@ -76,6 +75,7 @@ function processPropItem(item: ObjProperty, ms: MagicString) {
 				defaultValue = eval(`(${raw})()`)
 			}
 			if (iitem.key.name === 'required') {
+				// @ts-expect-error
 				required = iitem.value.value
 			}
 			if (iitem.key.name === 'validator') {
@@ -118,4 +118,12 @@ function constructer2Type(name: string) {
 		default:
 			return 'unknown'
 	}
+}
+
+export function beforeCompileProps(str: string): string {
+	const reg = /props:\s*(.*)/s
+	const match = str.match(reg)
+	if (match)
+		return `const props = ${match[1]}`
+	else return ''
 }
